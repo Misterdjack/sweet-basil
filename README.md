@@ -1,1 +1,3 @@
-# sweet-basil
+# Sweet Basil
+
+e-mail collection landing page
