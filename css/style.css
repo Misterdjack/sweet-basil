@@ -18,6 +18,7 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #2b3e51;
   background-color: #ffffff;
+  height: 100%;
 }
 
 a {
@@ -34,7 +35,6 @@ Custom CSS
   background-image: url("../img/background1.jpg");
   background-size: cover;
   background-position: center;
-  width: 100wh;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,7 +42,7 @@ Custom CSS
 }
 
 .hero-inner {
-  background-color: rgba(58, 58, 58, 0.8);
+  background-color: rgba(58, 58, 58, 0.6);
   width: 100%;
 }
 
@@ -58,6 +58,7 @@ Custom CSS
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
+  max-height: 100vh;
 }
 
 .align {
@@ -68,25 +69,31 @@ Custom CSS
 
 .top-logo {
   /*background-color: rgba(117, 21, 21, .8);*/
-  width: 40%;
-  margin-top: 70px;
-  max-width: 400px;
+  width: 27%;
+  max-width: 350px;
+  min-width: 120px;
+  margin-top: 20px;
 }
 
-.button:hover {
+/* .send-btn {
+  background-color: rgba(117, 21, 21, .7);
+}
+
+
+.send-btn:hover {
   background-color: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.7);
   color: white;
-}
+} */
 /* --------------------------------
 
 Form
 
 -------------------------------- */
-.cd-form {
+#mc_embed_signup {
   width: 90%;
   max-width: 600px;
-  margin: 2em auto;
+  margin: 1em auto;
 }
 .cd-form::after {
   clear: both;
@@ -101,6 +108,7 @@ Form
   margin-bottom: 20px;
   font-size: 2rem;
   border-bottom: 1px solid #ecf0f1;
+  color: #fff;
 }
 .cd-form div {
   /* form element wrapper */
@@ -285,7 +293,7 @@ Form
 .cd-form input[type="submit"] {
   /* button style */
   border: none;
-  background: #2c97de;
+  background: rgba(117, 21, 21, .7);
   border-radius: .25em;
   padding: 16px 20px;
   color: #ffffff;
@@ -301,11 +309,11 @@ Form
   appearance: none;
 }
 .no-touch .cd-form input[type="submit"]:hover {
-  background: #42a2e1;
+  background: rgba(117, 21, 21, 1);
 }
 .cd-form input[type="submit"]:focus {
   outline: none;
-  background: #2b3e51;
+  background: rgba(117, 21, 21, 1);
 }
 .cd-form input[type="submit"]:active {
   -webkit-transform: scale(0.9);
